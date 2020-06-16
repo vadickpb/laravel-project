@@ -3,12 +3,52 @@ form .avatar{
     margin-bottom: 20px;
 }
 
-.navbar .container-avatar{
+.pub-image{
+    margin-bottom: 25px;
+}
+
+.navbar .container-avatar,
+.pub-image .container-avatar{
     width: 30px;
     height: 30px;
     border-radius: 50px;
     overflow: hidden;
 }
-.navbar .container-avatar img{
+.navbar .container-avatar img,
+.pub-image .container-avatar img{
     height: 100%;
 }
+
+.pub-image .container-avatar{
+    float: left;
+    margin-right: 15px;
+}
+
+.pub-image .data-user{
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.pub-image .nickname{
+    color: gray;
+}
+
+.image-container{
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.pub-image .card-body{
+    padding: 0px;
+}
+
+.pub-image .description{
+    padding: 20px;
+}
+
+

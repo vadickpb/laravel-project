@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Image extends Model
 {
     //indicar la tabla que va a modificar este modelo
@@ -23,4 +24,6 @@ class Image extends Model
     public function user(){
         return $this->belongsTo('App\User', 'user_id');
     }
+    
+    
 }

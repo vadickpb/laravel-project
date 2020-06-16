@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Image;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 
@@ -57,6 +58,14 @@ class ImageController extends Controller
                         ->with(['message'=>'La imagen se guardó correctamente!!']);
 
         
+
+
+    }
+
+    public function getImage($filename){
+
+        $file = Storage::disk('images')->get($filename);
+        return new Response($file, 200);
 
 
     }
