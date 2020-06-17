@@ -5,8 +5,7 @@
     @include('includes.message')
     <div class="row justify-content-center">
         
-        <div class="col-md-8">
-        @foreach ($images as $image)
+        <div class="col-md-10">
             <div class="card pub-image">
             
             <div class="card-header">
@@ -23,11 +22,12 @@
 
                 <div class="data-user">
                     
-                    <a href="{{route('image.detail',['id'=>$image->id]) }}">
+                
                     {{$image->user->name.' '.$image->user->surname}} 
+                    
                     <span class="nickname"> {{' | @'.$image->user->nick}}</span>
-                    </a>
                 </div>
+            
             
             </div>
 
@@ -67,10 +67,9 @@
                    
                 </div>
             </div>
-            @endforeach
+           
             {{-- Paginacion --}}
             <div class="clearflix"></div>
-            {{$images->links()}}
         </div>
 
     </div>

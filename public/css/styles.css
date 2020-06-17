@@ -28,6 +28,9 @@ form .avatar{
     font-weight: bold;
     line-height: 30px;
 }
+.pub-image .data-user a{
+    color: #444;
+}
 
 .pub-image .nickname{
     color: gray;
@@ -49,6 +52,26 @@ form .avatar{
 
 .pub-image .description{
     padding: 20px;
+}
+
+.pub-image .btn-comments{
+    margin: 20px;
+    margin-top: 0;
+    padding-bottom: 0px;
+    margin-left: 0;
+}
+.likes{
+    padding: 0 20px 0 20px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+
+.likes img{
+    width: 20px;
+    
+
 }
 
 

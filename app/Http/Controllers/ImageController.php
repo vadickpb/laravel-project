@@ -7,6 +7,8 @@ use App\Image;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Auth;
+
 
 class ImageController extends Controller
 {
@@ -36,7 +38,7 @@ class ImageController extends Controller
         
         //Asignar valores al objeto
         $image = new Image();
-        $user = \Auth::user();
+        $user = Auth::user();
 
         $image->user_id = $user->id;
         $image->description = $descripcion;
@@ -68,5 +70,13 @@ class ImageController extends Controller
         return new Response($file, 200);
 
 
+    }
+
+    public function detail($id){
+        $image = Image::find($id);
+
+        return view('image.detail', [
+            'image' => $image
+        ]);
     }
 }
