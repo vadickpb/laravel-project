@@ -1,0 +1,29 @@
+[33mcommit ffc0e62edb1adf7a2af2f7b246452ac290510c16[m[33m ([m[1;36mHEAD -> [m[1;32mlike_controller[m[33m)[m
+Author: Your Name <you@example.com>
+Date:   Thu Jun 18 10:51:35 2020 -0500
+
+    likes de la pagina
+
+[33mcommit 2fffcd21e8d13ff1e09392ea9ecc16d2bbb75b03[m[33m ([m[1;31morigin/feature_vadick[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Your Name <you@example.com>
+Date:   Wed Jun 17 12:40:03 2020 -0500
+
+    seccion de comentarios
+
+[33mcommit 0aa359d3593f6d7b3f129988e3cdb2d1e21758c6[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 16 19:25:02 2020 -0500
+
+    detalle de la imagen
+
+[33mcommit e4ab293c58b216e64bf14d376fe8ef2bc1d6859b[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 16 16:58:42 2020 -0500
+
+    maquetacion de imagenes y home
+
+[33mcommit d19f2510ea5161cf5f22016cdba1d8c2d21c1459[m
+Author: Your Name <you@example.com>
+Date:   Tue Jun 16 15:23:28 2020 -0500
+
+    init project
