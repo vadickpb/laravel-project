@@ -83,7 +83,7 @@ CREATE table likes(
     CONSTRAINT pk_likes PRIMARY KEY(id),
     CONSTRAINT fk_likes_users FOREIGN KEY(user_id) REFERENCES users(id),
     CONSTRAINT fk_likes_images FOREIGN KEY(image_id) REFERENCES images(id)
-)
+)ENGINE=INNODB;
 
 
 INSERT INTO likes VALUES(NULL, 1, 4,  CURTIME(), CURTIME());
@@ -91,3 +91,10 @@ INSERT INTO likes VALUES(NULL, 2, 4,  CURTIME(), CURTIME());
 INSERT INTO likes VALUES(NULL, 3, 1, CURTIME(), CURTIME());
 INSERT INTO likes VALUES(NULL, 3, 2, CURTIME(), CURTIME());
 INSERT INTO likes VALUES(NULL, 2, 1, CURTIME(), CURTIME());
+
+
+USE laravel_master;
+
+select * from users;
+
+drop table likes;

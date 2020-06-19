@@ -110,6 +110,20 @@ form .avatar{
     margin-top: 50px;
 }
 
+.image-edit img{
+    width: 300px;
+}
+
+.user-profile{
+    margin-bottom: 30px;
+}
+
+.user-profile .container-avatar img{
+    width: 100px;
+    height: 100px;
+    margin-top:40px ;
+}
+
 
 
 
