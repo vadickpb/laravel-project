@@ -62,4 +62,9 @@ window.addEventListener('load', function(){
     }
     dislike();
 
+    //BUSCADOR
+    $('#buscador').submit(function(e){
+        $(this).attr('action',url+'/user/index/'+$('#buscador #search').val());
+    });
+
 });
